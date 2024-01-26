@@ -5,7 +5,7 @@ import styled from "styled-components/native";
 
 const StyledList = styled.View`
   flex: 1;
-  padding: 8px;
+  padding: ${({ theme }) => theme.sizes[0]};
   background-color: orange;
 `;
 

@@ -3,11 +3,11 @@ import { Card } from "react-native-paper";
 import styled from "styled-components/native";
 
 const StyledCard = styled(Card)`
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.ui.quartenary};
 `;
 
 const StyledText = styled.Text`
-  padding: 9px;
+  padding: ${({ theme }) => theme.sizes[0]};
 `;
 
 function RestaurantCard({ restaurant = {} }) {
